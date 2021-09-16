@@ -1,4 +1,4 @@
-module github.com/opentrx/seata-golang/v2
+module github.com/carlzhao/seata-golang/v2
 
 go 1.15
 
