@@ -15,4 +15,4 @@ linters:
     - varcheck
     - goimports
     - gocritic
-    - revive
+#    - revive

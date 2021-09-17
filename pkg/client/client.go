@@ -2,9 +2,11 @@ package client
 
 import (
 	"context"
-	"github.com/carlzhao/seata-golang/v2/pkg/util/log"
-	"google.golang.org/grpc"
+	"fmt"
 	"time"
+
+	"github.com/pkg/errors"
+	"google.golang.org/grpc"
 
 	"github.com/carlzhao/seata-golang/v2/pkg/apis"
 	"github.com/carlzhao/seata-golang/v2/pkg/client/config"
@@ -24,7 +26,7 @@ func Init(config *config.Configuration) {
 		grpc.WithBlock(),
 		grpc.WithKeepaliveParams(config.GetClientParameters()))
 	if err != nil {
-		log.Fatalf("did not connect: %v", err)
+		panic(errors.New(fmt.Sprintf("did not connect: %v", err)))
 	}
 
 	resourceManagerClient := apis.NewResourceManagerServiceClient(conn)

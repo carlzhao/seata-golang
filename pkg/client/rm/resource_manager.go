@@ -3,6 +3,8 @@ package rm
 import (
 	"context"
 	"fmt"
+	"io"
+
 	"github.com/carlzhao/seata-golang/v2/pkg/apis"
 	"github.com/carlzhao/seata-golang/v2/pkg/client/base/exception"
 	"github.com/carlzhao/seata-golang/v2/pkg/client/base/model"
@@ -10,7 +12,6 @@ import (
 	"github.com/carlzhao/seata-golang/v2/pkg/util/runtime"
 	"github.com/gogo/protobuf/types"
 	"google.golang.org/grpc/metadata"
-	"io"
 )
 
 var defaultResourceManager *ResourceManager
