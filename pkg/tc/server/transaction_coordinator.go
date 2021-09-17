@@ -116,7 +116,7 @@ func (tc *TransactionCoordinator) Begin(ctx context.Context, request *apis.Globa
 		event.EventBus.GlobalTransactionEventChannel <- evt
 	}, nil)
 
-	log.Infof("successfully begin global transaction xid = {}", gt.XID)
+	log.Infof("successfully begin global transaction xid = {%s}", gt.XID)
 	return &apis.GlobalBeginResponse{
 		ResultCode: apis.ResultCodeSuccess,
 		XID:        xid,
