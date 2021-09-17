@@ -22,3 +22,5 @@ cmd/tc/cmd
 cmd/tc/tc
 cmd/tc/trace.out
 dist/tc
+dist/
+examples/

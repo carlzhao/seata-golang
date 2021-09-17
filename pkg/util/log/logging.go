@@ -122,7 +122,7 @@ func Init(logPath string, level Level) {
 
 	encoder := zapcore.NewConsoleEncoder(encoderConfig)
 	core := zapcore.NewCore(encoder, syncer, zap.NewAtomicLevelAt(zapcore.Level(level)))
-	zapLogger = zap.New(core, zap.AddCaller())
+	zapLogger = zap.New(core, zap.AddCaller(), zap.AddCallerSkip(1))
 
 	log = zapLogger.Sugar()
 }

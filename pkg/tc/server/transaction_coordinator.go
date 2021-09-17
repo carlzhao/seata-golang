@@ -564,7 +564,7 @@ func (tc *TransactionCoordinator) doGlobalRollback(gt *model.GlobalTransaction, 
 			int64(time2.CurrentTimeMillis()), gt.Status)
 		event.EventBus.GlobalTransactionEventChannel <- evt
 	}, nil)
-	log.Infof("successfully rollback global, xid = %d", gt.XID)
+	log.Infof("successfully rollback global, xid = %s", gt.XID)
 
 	return true, err
 }

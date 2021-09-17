@@ -111,6 +111,7 @@ func Implement(v GlobalTransactionProxyService) {
 
 			// todo 只要出错就回滚，未来可以优化一下，某些错误才回滚，某些错误的情况下，可以提交
 			if errValue.IsValid() && !errValue.IsNil() {
+				log.Infof("transaction failed, need rollback, errValue: %v, txInfo: %v", errValue, txInfo)
 				rollbackErr := tx.Rollback(invCtx)
 				if rollbackErr != nil {
 					return proxy.ReturnWithError(methodDesc, errors.WithStack(rollbackErr))

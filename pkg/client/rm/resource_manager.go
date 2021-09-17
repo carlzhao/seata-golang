@@ -3,15 +3,14 @@ package rm
 import (
 	"context"
 	"fmt"
-	"io"
-
-	"github.com/gogo/protobuf/types"
 	"github.com/carlzhao/seata-golang/v2/pkg/apis"
 	"github.com/carlzhao/seata-golang/v2/pkg/client/base/exception"
 	"github.com/carlzhao/seata-golang/v2/pkg/client/base/model"
 	"github.com/carlzhao/seata-golang/v2/pkg/util/log"
 	"github.com/carlzhao/seata-golang/v2/pkg/util/runtime"
+	"github.com/gogo/protobuf/types"
 	"google.golang.org/grpc/metadata"
+	"io"
 )
 
 var defaultResourceManager *ResourceManager
@@ -72,11 +71,18 @@ func GetResourceManager() *ResourceManager {
 }
 
 func (manager *ResourceManager) branchCommunicate() {
+	var count int
 	for {
 		ctx := metadata.AppendToOutgoingContext(context.Background(), "addressing", manager.addressing)
 		stream, err := manager.rpcClient.BranchCommunicate(ctx)
-		if err != nil {
+		if err != nil && count < 3 {
+			count++
+			log.Info(err)
 			continue
+		}
+
+		if count == 3 {
+			panic(err)
 		}
 
 		done := make(chan bool)
@@ -92,8 +98,6 @@ func (manager *ResourceManager) branchCommunicate() {
 					if err != nil {
 						return
 					}
-				default:
-					continue
 				}
 			}
 		}, nil)
