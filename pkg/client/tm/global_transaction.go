@@ -5,10 +5,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/opentrx/seata-golang/v2/pkg/apis"
-	ctx "github.com/opentrx/seata-golang/v2/pkg/client/base/context"
-	"github.com/opentrx/seata-golang/v2/pkg/client/config"
-	"github.com/opentrx/seata-golang/v2/pkg/util/log"
+	"github.com/carlzhao/seata-golang/v2/pkg/apis"
+	ctx "github.com/carlzhao/seata-golang/v2/pkg/client/base/context"
+	"github.com/carlzhao/seata-golang/v2/pkg/client/config"
+	"github.com/carlzhao/seata-golang/v2/pkg/util/log"
 )
 
 const (

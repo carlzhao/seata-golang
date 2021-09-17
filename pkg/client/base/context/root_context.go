@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/opentrx/seata-golang/v2/pkg/apis"
-	"github.com/opentrx/seata-golang/v2/pkg/util/log"
+	"github.com/carlzhao/seata-golang/v2/pkg/apis"
+	"github.com/carlzhao/seata-golang/v2/pkg/util/log"
 )
 
 const (

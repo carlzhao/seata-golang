@@ -6,10 +6,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	ctx "github.com/opentrx/seata-golang/v2/pkg/client/base/context"
-	"github.com/opentrx/seata-golang/v2/pkg/client/base/model"
-	"github.com/opentrx/seata-golang/v2/pkg/client/proxy"
-	"github.com/opentrx/seata-golang/v2/pkg/util/log"
+	ctx "github.com/carlzhao/seata-golang/v2/pkg/client/base/context"
+	"github.com/carlzhao/seata-golang/v2/pkg/client/base/model"
+	"github.com/carlzhao/seata-golang/v2/pkg/client/proxy"
+	"github.com/carlzhao/seata-golang/v2/pkg/util/log"
 )
 
 type GlobalTransactionProxyService interface {

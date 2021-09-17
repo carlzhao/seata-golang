@@ -8,8 +8,8 @@ import (
 
 	"google.golang.org/grpc/keepalive"
 
-	"github.com/opentrx/seata-golang/v2/pkg/util/log"
-	"github.com/opentrx/seata-golang/v2/pkg/util/parser"
+	"github.com/carlzhao/seata-golang/v2/pkg/util/log"
+	"github.com/carlzhao/seata-golang/v2/pkg/util/parser"
 )
 
 var configuration *Configuration

@@ -1,8 +1,8 @@
 package tcc
 
 import (
-	"github.com/opentrx/seata-golang/v2/pkg/apis"
-	"github.com/opentrx/seata-golang/v2/pkg/client/proxy"
+	"github.com/carlzhao/seata-golang/v2/pkg/apis"
+	"github.com/carlzhao/seata-golang/v2/pkg/client/proxy"
 )
 
 type TCCResource struct {

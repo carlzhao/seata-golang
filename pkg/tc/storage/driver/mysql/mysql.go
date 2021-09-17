@@ -10,11 +10,11 @@ import (
 	"github.com/go-xorm/xorm"
 	"xorm.io/builder"
 
-	"github.com/opentrx/seata-golang/v2/pkg/apis"
-	"github.com/opentrx/seata-golang/v2/pkg/tc/storage"
-	"github.com/opentrx/seata-golang/v2/pkg/tc/storage/driver/factory"
-	"github.com/opentrx/seata-golang/v2/pkg/util/log"
-	"github.com/opentrx/seata-golang/v2/pkg/util/sql"
+	"github.com/carlzhao/seata-golang/v2/pkg/apis"
+	"github.com/carlzhao/seata-golang/v2/pkg/tc/storage"
+	"github.com/carlzhao/seata-golang/v2/pkg/tc/storage/driver/factory"
+	"github.com/carlzhao/seata-golang/v2/pkg/util/log"
+	"github.com/carlzhao/seata-golang/v2/pkg/util/sql"
 )
 
 const (

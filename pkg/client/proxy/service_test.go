@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/opentrx/seata-golang/v2/pkg/client/base/model"
+	"github.com/carlzhao/seata-golang/v2/pkg/client/base/model"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )

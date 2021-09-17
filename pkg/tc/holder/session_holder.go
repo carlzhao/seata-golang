@@ -1,9 +1,9 @@
 package holder
 
 import (
-	"github.com/opentrx/seata-golang/v2/pkg/apis"
-	"github.com/opentrx/seata-golang/v2/pkg/tc/model"
-	"github.com/opentrx/seata-golang/v2/pkg/tc/storage"
+	"github.com/carlzhao/seata-golang/v2/pkg/apis"
+	"github.com/carlzhao/seata-golang/v2/pkg/tc/model"
+	"github.com/carlzhao/seata-golang/v2/pkg/tc/storage"
 )
 
 type SessionHolder struct {

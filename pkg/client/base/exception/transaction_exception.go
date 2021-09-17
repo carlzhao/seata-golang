@@ -3,7 +3,7 @@ package exception
 import (
 	"errors"
 
-	"github.com/opentrx/seata-golang/v2/pkg/apis"
+	"github.com/carlzhao/seata-golang/v2/pkg/apis"
 )
 
 // TransactionException

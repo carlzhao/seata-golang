@@ -5,7 +5,7 @@ REGISTRY ?= seataio
 TAG = $(shell git rev-parse --abbrev-ref HEAD)
 COMMIT = git-$(shell git rev-parse --short HEAD)
 DATE = $(shell date +"%Y-%m-%d_%H:%M:%S")
-GOLDFLAGS = "-w -s -extldflags '-z now' -X github.com/opentrx/seata-golang/versions.COMMIT=$(COMMIT) -X github.com/opentrx/seata-golang/versions.BUILDDATE=$(DATE)"
+GOLDFLAGS = "-w -s -extldflags '-z now' -X github.com/carlzhao/seata-golang/versions.COMMIT=$(COMMIT) -X github.com/carlzhao/seata-golang/versions.BUILDDATE=$(DATE)"
 
 
 .PHONY: build-go
@@ -16,10 +16,10 @@ build-go:
 build-bin:
 	docker run --rm -e GOOS=linux -e GOCACHE=/tmp -e GOARCH=$(ARCH) -e GOPROXY=https://goproxy.cn \
 		-u $(shell id -u):$(shell id -g) \
-		-v $(CURDIR):/go/src/github.com/opentrx/seata-golang:ro \
-		-v $(CURDIR)/dist:/go/src/github.com/opentrx/seata-golang/dist/ \
+		-v $(CURDIR):/go/src/github.com/carlzhao/seata-golang:ro \
+		-v $(CURDIR)/dist:/go/src/github.com/carlzhao/seata-golang/dist/ \
 		golang:$(GO_VERSION) /bin/bash -c '\
-		cd /go/src/github.com/opentrx/seata-golang && \
+		cd /go/src/github.com/carlzhao/seata-golang && \
 		make build-go '
 
 .PHONY: build-images

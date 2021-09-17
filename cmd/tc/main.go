@@ -10,15 +10,15 @@ import (
 	"github.com/urfave/cli/v2"
 	"google.golang.org/grpc"
 
-	"github.com/opentrx/seata-golang/v2/pkg/apis"
-	"github.com/opentrx/seata-golang/v2/pkg/tc/config"
-	_ "github.com/opentrx/seata-golang/v2/pkg/tc/metrics"
-	"github.com/opentrx/seata-golang/v2/pkg/tc/server"
-	_ "github.com/opentrx/seata-golang/v2/pkg/tc/storage/driver/inmemory"
-	_ "github.com/opentrx/seata-golang/v2/pkg/tc/storage/driver/mysql"
-	_ "github.com/opentrx/seata-golang/v2/pkg/tc/storage/driver/pgsql"
-	"github.com/opentrx/seata-golang/v2/pkg/util/log"
-	"github.com/opentrx/seata-golang/v2/pkg/util/uuid"
+	"github.com/carlzhao/seata-golang/v2/pkg/apis"
+	"github.com/carlzhao/seata-golang/v2/pkg/tc/config"
+	_ "github.com/carlzhao/seata-golang/v2/pkg/tc/metrics"
+	"github.com/carlzhao/seata-golang/v2/pkg/tc/server"
+	_ "github.com/carlzhao/seata-golang/v2/pkg/tc/storage/driver/inmemory"
+	_ "github.com/carlzhao/seata-golang/v2/pkg/tc/storage/driver/mysql"
+	_ "github.com/carlzhao/seata-golang/v2/pkg/tc/storage/driver/pgsql"
+	"github.com/carlzhao/seata-golang/v2/pkg/util/log"
+	"github.com/carlzhao/seata-golang/v2/pkg/util/uuid"
 )
 
 func main() {

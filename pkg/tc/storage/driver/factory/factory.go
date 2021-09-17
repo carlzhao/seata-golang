@@ -3,7 +3,7 @@ package factory
 import (
 	"fmt"
 
-	"github.com/opentrx/seata-golang/v2/pkg/tc/storage"
+	"github.com/carlzhao/seata-golang/v2/pkg/tc/storage"
 )
 
 // driverFactories stores an internal mapping between storage driver names and their respective

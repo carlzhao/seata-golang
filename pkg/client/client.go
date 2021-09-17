@@ -5,11 +5,11 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/opentrx/seata-golang/v2/pkg/apis"
-	"github.com/opentrx/seata-golang/v2/pkg/client/config"
-	"github.com/opentrx/seata-golang/v2/pkg/client/rm"
-	"github.com/opentrx/seata-golang/v2/pkg/client/tcc"
-	"github.com/opentrx/seata-golang/v2/pkg/client/tm"
+	"github.com/carlzhao/seata-golang/v2/pkg/apis"
+	"github.com/carlzhao/seata-golang/v2/pkg/client/config"
+	"github.com/carlzhao/seata-golang/v2/pkg/client/rm"
+	"github.com/carlzhao/seata-golang/v2/pkg/client/tcc"
+	"github.com/carlzhao/seata-golang/v2/pkg/client/tm"
 )
 
 // Init init resource manager，init transaction manager, expose a port to listen tc

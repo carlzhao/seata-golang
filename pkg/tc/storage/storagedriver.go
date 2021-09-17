@@ -1,7 +1,7 @@
 package storage
 
 import (
-	"github.com/opentrx/seata-golang/v2/pkg/apis"
+	"github.com/carlzhao/seata-golang/v2/pkg/apis"
 )
 
 // SessionManager stored the globalTransactions and branchTransactions.

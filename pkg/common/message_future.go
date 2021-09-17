@@ -1,6 +1,6 @@
 package common
 
-import "github.com/opentrx/seata-golang/v2/pkg/apis"
+import "github.com/carlzhao/seata-golang/v2/pkg/apis"
 
 // MessageFuture ...
 type MessageFuture struct {

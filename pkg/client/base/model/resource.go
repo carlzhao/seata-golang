@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/opentrx/seata-golang/v2/pkg/apis"
+	"github.com/carlzhao/seata-golang/v2/pkg/apis"
 )
 
 // Resource used to manage transaction resource

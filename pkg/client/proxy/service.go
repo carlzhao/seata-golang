@@ -7,8 +7,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	ctx "github.com/opentrx/seata-golang/v2/pkg/client/base/context"
-	"github.com/opentrx/seata-golang/v2/pkg/util/log"
+	ctx "github.com/carlzhao/seata-golang/v2/pkg/client/base/context"
+	"github.com/carlzhao/seata-golang/v2/pkg/util/log"
 )
 
 var (

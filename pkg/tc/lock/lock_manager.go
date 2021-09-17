@@ -1,10 +1,10 @@
 package lock
 
 import (
-	"github.com/opentrx/seata-golang/v2/pkg/apis"
-	"github.com/opentrx/seata-golang/v2/pkg/tc/model"
-	"github.com/opentrx/seata-golang/v2/pkg/tc/storage"
-	"github.com/opentrx/seata-golang/v2/pkg/util/log"
+	"github.com/carlzhao/seata-golang/v2/pkg/apis"
+	"github.com/carlzhao/seata-golang/v2/pkg/tc/model"
+	"github.com/carlzhao/seata-golang/v2/pkg/tc/storage"
+	"github.com/carlzhao/seata-golang/v2/pkg/util/log"
 )
 
 type LockManager struct {

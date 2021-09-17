@@ -6,7 +6,7 @@ import (
 	"net"
 	"sync/atomic"
 
-	time2 "github.com/opentrx/seata-golang/v2/pkg/util/time"
+	time2 "github.com/carlzhao/seata-golang/v2/pkg/util/time"
 )
 
 const (

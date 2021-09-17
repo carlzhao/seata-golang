@@ -1,8 +1,8 @@
 package model
 
 import (
-	"github.com/opentrx/seata-golang/v2/pkg/apis"
-	"github.com/opentrx/seata-golang/v2/pkg/util/time"
+	"github.com/carlzhao/seata-golang/v2/pkg/apis"
+	"github.com/carlzhao/seata-golang/v2/pkg/util/time"
 )
 
 type GlobalTransaction struct {
