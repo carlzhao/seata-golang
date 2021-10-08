@@ -22,3 +22,4 @@ cmd/tc/cmd
 cmd/tc/tc
 cmd/tc/trace.out
 log/
+dist/
